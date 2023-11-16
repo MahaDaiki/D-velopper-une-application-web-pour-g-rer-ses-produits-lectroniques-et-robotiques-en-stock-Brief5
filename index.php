@@ -20,7 +20,7 @@
                             <a href="items.html" class="nav-link">items</a>
                         </li>
                         <li class="nav-item lo">
-                            <a href="login.html" class="nav-link">Login</a>
+                            <a href="login.php" class="nav-link">Login</a>
                         </li>
                     </ul>
             </div>
