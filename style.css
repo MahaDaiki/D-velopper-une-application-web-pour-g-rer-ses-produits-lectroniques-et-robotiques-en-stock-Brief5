@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('img/electro-nacer.png');
+     background-repeat: no-repeat;
+     height: 100vh;
+     width: 100%;
+    background-position: center ; 
+    
+}
+nav{
+    background-color: #505FE9;
+}
+.lo{
+    background-color: #7682EE;
+    border-radius: 35px;
+    margin-left: 4rem;
+    padding: 0 15px;
+}
+
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(254, 250, 250,0.7);
+    margin-left: 30rem;
+    margin-right: 30rem;
+    border-radius: 40px;
+    margin-top: 7rem;
+    
+
+}
+
+
+.inp{
+     background-color: #7682EE;
+     border-radius: 15px;
+     margin-top: 2rem;
+     padding: 0.5rem;
+     z-index: 2;
+}
+.bttn{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+    
+
