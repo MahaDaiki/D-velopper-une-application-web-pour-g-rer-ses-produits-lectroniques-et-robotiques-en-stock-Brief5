@@ -16,27 +16,26 @@ if($link === false){
 if ($link) {
     // Handle form submission
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $username = mysqli_real_escape_string($link, $_POST["username"]); // Use mysqli_real_escape_string to prevent SQL injection
+        $username = mysqli_real_escape_string($link, $_POST["username"]); 
         $password = mysqli_real_escape_string($link, $_POST["password"]);
 
         // Perform the query
         $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
-        $result = mysqli_query($link, $sql); // Use mysqli_query instead of $dbConnection->query
+        $result = mysqli_query($link, $sql); 
 
         if ($result && mysqli_num_rows($result) > 0) {
             $row = mysqli_fetch_assoc($result);
             $_SESSION['id'] = $row['id'];
 
             // Redirect to the home page
-            header("Location: index.php");
+            header("Location: home.php");
             exit();
         } else {
             echo "Please register";
         }
     }
 
-    mysqli_close($link); // Use mysqli_close instead of $dbConnection->close
-} else {
+    mysqli_close($link);
     echo "Database connection not available.";
 }
 ?>

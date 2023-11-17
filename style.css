@@ -47,5 +47,16 @@ nav{
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
-    
+.i1{
+   
+}
 
+.item{
+    /* color: white;  */
+    background-color: black;
+}
+/* .allitems{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
